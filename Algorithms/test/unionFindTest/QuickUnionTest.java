@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import unionFind.QuickUnion;
-import unionFind.UnionFind;
+import main.unionFind.QuickUnion;
+import main.unionFind.UnionFind;
 
 public class QuickUnionTest {
 

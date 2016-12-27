@@ -3,8 +3,9 @@ package unionFindTest;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import unionFind.QuickFind;
-import unionFind.UnionFind;
+
+import main.unionFind.QuickFind;
+import main.unionFind.UnionFind;
 
 public class QuickFindTest {
 

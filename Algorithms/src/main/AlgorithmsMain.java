@@ -1,7 +1,7 @@
 package main;
 
 
-import unionFind.QuickFind;
+import main.unionFind.QuickFind;
 
 public class AlgorithmsMain {
 

@@ -1,4 +1,4 @@
-package unionFind;
+package main.unionFind;
 
 public class QuickUnion extends UnionFind {
 
