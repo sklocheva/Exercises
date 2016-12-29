@@ -1,18 +1,18 @@
 package main.set;
 
 import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 import main.Product;
-import main.Supplier;
 
 public class ProductCatalogue {
 
-	private final Set<Product> catalogue;
+	//no duplicates
+	private final SortedSet<Product> catalogue;
 	
 	public ProductCatalogue(){
-		catalogue = new HashSet<>();
+		catalogue = new TreeSet<>(Product.BY_WEIGHT);
 	}
 	
 	public void isSuppliedBy(Supplier supplier){
@@ -21,6 +21,25 @@ public class ProductCatalogue {
 	
 	public boolean contains(Collection<Product> items){
 		return catalogue.containsAll(items);
+	}
+	
+	public SortedSet<Product> getLightProducts(){
+		//exclusive of that break point
+		return catalogue.headSet(findBreakPoint());
+	}
+	
+	public SortedSet<Product> getHeavyProducts() throws NullPointerException{
+		//inclusive
+		return catalogue.tailSet(findBreakPoint());
+	}
+
+	private Product findBreakPoint() {
+		for(Product product : catalogue){
+			if(product.getWeight() > 20){
+				return product;
+			}
+		}
+		return null;
 	}
 	
 }

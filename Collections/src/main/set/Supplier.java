@@ -1,7 +1,9 @@
-package main;
+package main.set;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import main.Product;
 
 public class Supplier {
 
