@@ -5,7 +5,9 @@ import java.util.Deque;
 
 public class Calculator {
 
+	//Deque used as a Stack
 	public int evaluate(String input) {
+		
 		final Deque<String> stack = new ArrayDeque<>();
 		String[] tokens = input.split(" ");
 
