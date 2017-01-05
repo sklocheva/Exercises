@@ -1,18 +1,16 @@
 package main;
 
-import static java.util.Comparator.comparing;
+import main.list.ShipableItem;
 
-import java.util.Comparator;
-
-public class Product {
+public class Furniture implements ShipableItem {
 
 	private String name;
 	private int weight;
 	
-	public static final Comparator<Product> BY_NAME = comparing(Product :: getName);
-	public static final Comparator<Product> BY_WEIGHT = comparing(Product :: getWeight);
+//	public static final Comparator<Product> BY_NAME = comparing(Product :: getName);
+//	public static final Comparator<Product> BY_WEIGHT = comparing(Product :: getWeight);
 	
-	public Product(String name, int weight) {
+	public Furniture(String name, int weight) {
 		
 		this.name = name;
 		this.weight = weight;
@@ -21,7 +19,7 @@ public class Product {
 	public String getName(){
 		return name;
 	}
-	
+	@Override
 	public int getWeight(){
 		return weight;
 	}
@@ -49,7 +47,7 @@ public class Product {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Product other = (Product) obj;
+		Furniture other = (Furniture) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;

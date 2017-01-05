@@ -5,15 +5,17 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.function.Predicate;
 
+import main.comparator.CategoryComparator;
+
 public class HelpDesk {
 
-	private static final Comparator<Enquiry> BY_CATEGORY = new Comparator<Enquiry>() {
-		public int compare(Enquiry o1, Enquiry o2) {
-			return o1.getCategory().compareTo(o2.getCategory());
-		}
-	};
+//	private static final Comparator<Enquiry> BY_CATEGORY = new Comparator<Enquiry>() {
+//		public int compare(Enquiry o1, Enquiry o2) {
+//			return o1.getCategory().compareTo(o2.getCategory());
+//		}
+//	};
 
-	private final Queue<Enquiry> enquiries = new PriorityQueue<>(BY_CATEGORY);
+	private final Queue<Enquiry> enquiries = new PriorityQueue<>(new CategoryComparator());
 
 	public void enquire(final Customer customer, final Category category) {
 

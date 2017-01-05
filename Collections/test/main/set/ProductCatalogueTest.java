@@ -10,11 +10,26 @@ import static main.ProductFixtures.*;
 import java.util.Arrays;
 
 public class ProductCatalogueTest {
+
+	// the catalogue can takes multiple kinds of items from the interface
+	// ShipableItems; unlike the Shipment class which ships only goods of the
+	// same class
 	ProductCatalogue catalogue;
 
 	@Before
 	public void before() {
 		catalogue = new ProductCatalogue();
+	}
+
+	@Test
+	public void multipleKindsOfItems() {
+
+		// has products
+		catalogue.isSuppliedBy(bobs);
+		// has made up HouseholdItems class items
+		catalogue.isSuppliedBy(mary);
+
+		Assert.assertEquals(true, catalogue.contains(Arrays.asList(door, forks)));
 	}
 
 	@Test
