@@ -2,7 +2,7 @@ package main;
 
 import main.list.ShipableItem;
 
-public class Furniture implements ShipableItem {
+public class Product implements ShipableItem {
 
 	private String name;
 	private int weight;
@@ -10,7 +10,7 @@ public class Furniture implements ShipableItem {
 //	public static final Comparator<Product> BY_NAME = comparing(Product :: getName);
 //	public static final Comparator<Product> BY_WEIGHT = comparing(Product :: getWeight);
 	
-	public Furniture(String name, int weight) {
+	public Product(String name, int weight) {
 		
 		this.name = name;
 		this.weight = weight;
@@ -47,7 +47,7 @@ public class Furniture implements ShipableItem {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Furniture other = (Furniture) obj;
+		Product other = (Product) obj;
 		if (name == null) {
 			if (other.name != null)
 				return false;

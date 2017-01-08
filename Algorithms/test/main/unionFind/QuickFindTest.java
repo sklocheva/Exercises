@@ -1,4 +1,4 @@
-package unionFindTest;
+package main.unionFind;
 
 import org.junit.Assert;
 import org.junit.Before;

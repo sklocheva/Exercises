@@ -3,7 +3,7 @@ package main.set;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.Furniture;
+import main.Product;
 import main.list.ShipableItem;
 
 public class Supplier {

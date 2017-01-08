@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import main.Furniture;
+import main.Product;
 
 public class UnmodifiableShoppingBasket {
 
-	private final List<Furniture> items = new ArrayList<>();
+	private final List<Product> items = new ArrayList<>();
 	private int totalWeight = 0;
 
-	public void addProduct(Furniture item) {
+	public void addProduct(Product item) {
 		items.add(item);
 		totalWeight = totalWeight + item.getWeight();
 	}
 
-	public List<Furniture> getItems() {
+	public List<Product> getItems() {
 		//restrains from modifying the list outside this class
 		return Collections.unmodifiableList(items);
 	}

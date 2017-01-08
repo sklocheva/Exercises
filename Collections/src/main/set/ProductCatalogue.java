@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import main.Furniture;
+import main.Product;
 import main.comparator.WeightComparator;
 import main.list.ShipableItem;
 

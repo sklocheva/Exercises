@@ -12,19 +12,19 @@ import org.junit.Before;
 import org.junit.Test;
 
 import main.HouseholdItem;
-import main.Furniture;
+import main.Product;
 
 public class ShipmentTest {
 	
 	// Shipment takes only items from a SPECIFIC class of
 	// the interface ShipableItems.
-	private Shipment<Furniture> shipment;
+	private Shipment<Product> shipment;
 	private Shipment<HouseholdItem> items;
 
 	@Before
 	public void beforeTest() {
 
-		shipment = new Shipment<Furniture>();
+		shipment = new Shipment<Product>();
 		items = new Shipment<HouseholdItem>();
 	}
 
