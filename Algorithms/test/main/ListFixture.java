@@ -19,7 +19,7 @@ public class ListFixture {
 		list.add(2);
 		list.add(9);
 		list.add(3);
-		orderedList = list;
+		orderedList = new ArrayList<Integer>(list);
 		Collections.sort(orderedList);
 	}
 }

@@ -14,8 +14,12 @@ public class BinarySearchIterative {
 		int low = 0;
 		int mid;
 
-		while (!(low > high)) {
+		while (low < high) {
 			mid = (low + high) / 2;
+			/*
+			 * Interpolation approach: mid = low + ((target - list.get(low)) *
+			 * (high - low) /(list.get(high) - list.get(low)));
+			 */
 
 			if (list.get(mid) == target) {
 				return true;
