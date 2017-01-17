@@ -16,7 +16,7 @@ public class Shipment<T extends ShipableItem> {
 
 	private static final int MAX_WEIGHT = 20;
 
-	private final List<T> products;
+	final List<T> products;
 	private List<T> heavyProducts;
 	private List<T> lightProducts;
 

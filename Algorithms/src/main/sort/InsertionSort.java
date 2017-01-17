@@ -20,24 +20,25 @@ public class InsertionSort {
 		// iterate over the list from the second el. till the end
 		for (int number = 1; number < list.size(); number++) {
 
-			// for (int i = number; i > 0; i--) {
-			// if (list.get(i) < list.get(i - 1)) {
-			// int temp = list.get(i);
-			// list.set(i, list.get(i - 1));
-			// list.set(i - 1, temp);
-			// }
-			// }
+			// goes backwards to the already sorted list to find el. smaller
+			// than k
+			for (int i = number; i > 0 && (list.get(i) < list.get(i - 1)); i--) {
+				int temp = list.get(i);
+				list.set(i, list.get(i - 1));
+				list.set(i - 1, temp);
+			}
 
-			int k = number;
-			// iterate backwards until an element smaller than 'k' is found (all
+			// int k = number;
+			// iterate backwards and swap k until an element smaller than 'k' is
+			// found (all
 			// elements before that are already sorted) or reached the first
 			// element;
-			while ((k > 0) && (list.get(k) < list.get(k - 1))) {
-				int temp = list.get(k);
-				list.set(k, list.get(k - 1));
-				list.set(k - 1, temp);
-				k--;
-			}
+			// while ((k > 0) && (list.get(k) < list.get(k - 1))) {
+			// int temp = list.get(k);
+			// list.set(k, list.get(k - 1));
+			// list.set(k - 1, temp);
+			// k--;
+			// }
 
 		}
 
