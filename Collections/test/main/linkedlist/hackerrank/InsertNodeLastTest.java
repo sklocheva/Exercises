@@ -1,6 +1,5 @@
 package main.linkedlist.hackerrank;
 
-import static main.linkedlist.hackerrank.LinkedListFixtures.emptyNode;
 import static main.linkedlist.hackerrank.LinkedListFixtures.node1;
 import static org.junit.Assert.assertEquals;
 
@@ -22,7 +21,7 @@ public class InsertNodeLastTest {
 
 	@Test
 	public void testEmpty() {
-		assertEquals(null, InsertNodeLast.InsertLast(emptyNode, 3));
+		assertEquals(null, InsertNodeLast.InsertLast(null, 3));
 	}
 
 }
