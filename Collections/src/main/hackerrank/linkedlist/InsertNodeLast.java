@@ -1,6 +1,5 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank.linkedlist;
 
-import main.linkedlist.Node;
 /**
  * This method inserts a value to the end of a linkedlist
  * @author Sophie

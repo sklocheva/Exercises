@@ -1,7 +1,8 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank.linkedlist;
+
+import static main.hackerrank.LinkedListFixtures.*;
 
 import org.junit.Test;
-import static main.linkedlist.hackerrank.LinkedListFixtures.*;
 
 public class PrintNodeTest {
 

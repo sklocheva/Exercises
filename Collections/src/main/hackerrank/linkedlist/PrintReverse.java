@@ -1,6 +1,4 @@
-package main.linkedlist.hackerrank;
-
-import main.linkedlist.Node;
+package main.hackerrank.linkedlist;
 
 public class PrintReverse {
 

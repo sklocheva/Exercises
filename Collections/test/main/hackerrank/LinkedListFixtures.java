@@ -1,14 +1,14 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank;
 
-import main.linkedlist.Node;
+import main.hackerrank.linkedlist.Node;
 
 public class LinkedListFixtures {
 
-	static Node node1;
-	static Node node2;
-	static Node node3;
-	static Node node4;
-	static Node oneElementNode;
+	public static Node node1;
+	public static Node node2;
+	public static Node node3;
+	public static Node node4;
+	public static Node oneElementNode;
 	
 	static{
 		node1 = new Node();

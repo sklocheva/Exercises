@@ -1,11 +1,9 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank.linkedlist;
 
-import static main.linkedlist.hackerrank.LinkedListFixtures.*;
+import static main.hackerrank.LinkedListFixtures.*;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
-import main.linkedlist.Node;
 
 public class InsertIntoDoublyListTest {
 

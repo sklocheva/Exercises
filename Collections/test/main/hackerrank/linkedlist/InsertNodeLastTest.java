@@ -1,11 +1,9 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank.linkedlist;
 
-import static main.linkedlist.hackerrank.LinkedListFixtures.node1;
+import static main.hackerrank.LinkedListFixtures.node1;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import main.linkedlist.Node;
 
 public class InsertNodeLastTest {
 

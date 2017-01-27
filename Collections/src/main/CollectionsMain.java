@@ -1,28 +1,24 @@
 package main;
 
-public class CollectionsMain {
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Scanner;
 
-	public static void main(String[] args) {
+public class CollectionsMain
+{
+   public static void main(String[] args){
+	   Scanner in = new Scanner(System.in);
+       Deque<Integer> deque = new ArrayDeque<>();
+       int n = in.nextInt();
+       int m = in.nextInt();
 
-		//main.queue tests
-//		HelpDesk helpDesk = new HelpDesk();
-//		Customer Jack = new Customer("Jack");
-//		Customer Jill = new Customer("Jill");
-//		Customer Mikey = new Customer("Mikey");
-//		
-//		helpDesk.enquire(Jack, Category.TABLET);
-//		helpDesk.enquire(Jill, Category.PRINTER);
-//		helpDesk.enquire(Mikey, Category.COMPUTER);
-//		helpDesk.enquire(Jack, Category.PHONE);
-//		
-//		helpDesk.processPrinterEnquiry();
-//		helpDesk.processGeneralEnquiries();
-//		helpDesk.processPrinterEnquiry();
-//		helpDesk.processPrinterEnquiry();
-//		helpDesk.processGeneralEnquiries();
+       for (int i = 0; i < n; i++) {
+           int num = in.nextInt();
+           if(deque.size()==m){
 
-		
-		
-	}
-
+           }else{
+        	   deque.addLast(num);;
+           }
+       }
+    }
 }

@@ -1,10 +1,8 @@
-package main.linkedlist.hackerrank;
+package main.hackerrank.linkedlist;
 
-import static main.linkedlist.hackerrank.LinkedListFixtures.node1;
+import static main.hackerrank.LinkedListFixtures.node1;
 
 import org.junit.Test;
-
-import main.linkedlist.Node;
 public class ReverseListTest {
 
 	@Test
