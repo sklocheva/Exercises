@@ -1,7 +1,5 @@
 package main.sort;
 
-import java.util.List;
-
 /**
  * Takes elements one by one and inserts them in the right position.
  * 
@@ -10,35 +8,26 @@ import java.util.List;
  */
 public class InsertionSort {
 
-	List<Integer> list;
+	int[] arr;
 
-	public InsertionSort(List<Integer> list) {
-		this.list = list;
+	public InsertionSort(int[] arr) {
+		this.arr = arr;
 	}
 
 	public void sort() {
 		// iterate over the list from the second el. till the end
-		for (int number = 1; number < list.size(); number++) {
+		for (int number = 1; number < arr.length; number++) {
 
+			int current = arr[number];
+			int i = number;
 			// goes backwards to the already sorted list to find el. smaller
-			// than k
-			for (int i = number; i > 0 && (list.get(i) < list.get(i - 1)); i--) {
-				int temp = list.get(i);
-				list.set(i, list.get(i - 1));
-				list.set(i - 1, temp);
+			// than current
+			while (i > 0 && (current < arr[i - 1])) {
+				arr[i] = arr[i - 1];
+				i--;
 			}
-
-			// int k = number;
-			// iterate backwards and swap k until an element smaller than 'k' is
-			// found (all
-			// elements before that are already sorted) or reached the first
-			// element;
-			// while ((k > 0) && (list.get(k) < list.get(k - 1))) {
-			// int temp = list.get(k);
-			// list.set(k, list.get(k - 1));
-			// list.set(k - 1, temp);
-			// k--;
-			// }
+			// after there are no longer smaller than current, put it into place
+			arr[i] = current;
 
 		}
 

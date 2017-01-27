@@ -1,4 +1,4 @@
-package main.hackerrank;
+package main.hackerrank.javastring;
 
 public class FindPalindrome {
 

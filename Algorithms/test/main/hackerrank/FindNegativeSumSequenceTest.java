@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import org.junit.Test;
 
+import main.hackerrank.javastring.FindNegativeSumSequence;
+
 public class FindNegativeSumSequenceTest {
 
 	@Test

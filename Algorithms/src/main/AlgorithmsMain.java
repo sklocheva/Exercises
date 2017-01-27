@@ -10,7 +10,8 @@ public class AlgorithmsMain {
 		// int[] inputArr = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
 		//
 
-		
+		char a = 'a';
+		System.out.println((int)a);
 	}
 
 }
