@@ -1,4 +1,4 @@
-package main.builderpattern.draw;
+package main.bridgepattern.draw;
 
 public class BlueCircle implements DrawAPI {
 

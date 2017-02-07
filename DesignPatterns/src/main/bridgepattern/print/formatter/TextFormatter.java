@@ -1,4 +1,4 @@
-package main.builderpattern.print;
+package main.bridgepattern.print.formatter;
 
 public interface TextFormatter {
 

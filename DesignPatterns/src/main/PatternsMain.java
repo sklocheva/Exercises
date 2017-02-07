@@ -1,13 +1,15 @@
 package main;
 
-import main.builderpattern.draw.Circle;
-import main.builderpattern.draw.DrawAPI;
-import main.builderpattern.draw.RedCircle;
-import main.builderpattern.draw.Shape;
-import main.builderpattern.print.Book;
-import main.builderpattern.print.Manuscript;
-import main.builderpattern.print.TextFormatter;
-import main.builderpattern.print.formatter.FancyFormatter;
+import main.bridgepattern.draw.Circle;
+import main.bridgepattern.draw.DrawAPI;
+import main.bridgepattern.draw.RedCircle;
+import main.bridgepattern.draw.Shape;
+import main.bridgepattern.print.Book;
+import main.bridgepattern.print.Manuscript;
+import main.bridgepattern.print.TermPaper;
+import main.bridgepattern.print.formatter.FancyFormatter;
+import main.bridgepattern.print.formatter.ReverseTextFormatter;
+import main.bridgepattern.print.formatter.TextFormatter;
 
 public class PatternsMain {
 
@@ -19,8 +21,11 @@ public class PatternsMain {
 		System.out.println();
 		
 		TextFormatter formatter = new FancyFormatter();
-		Manuscript book = new Book("mybook", "textexttext", formatter);
+		TextFormatter formatter2 = new ReverseTextFormatter();
+		Manuscript book = new Book("mybook", "author", "1999", "Texttexttext", formatter);
+		Manuscript paper = new TermPaper("Bill", "title", "text", formatter2);
 		book.print();
+		paper.print();
 	}
 
 }

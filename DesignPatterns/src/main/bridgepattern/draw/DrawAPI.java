@@ -1,4 +1,4 @@
-package main.builderpattern.draw;
+package main.bridgepattern.draw;
 
 /**
  * DrawAPI interface is acting as a bridge implementer and concrete classes

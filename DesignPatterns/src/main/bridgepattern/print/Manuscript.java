@@ -1,4 +1,6 @@
-package main.builderpattern.print;
+package main.bridgepattern.print;
+
+import main.bridgepattern.print.formatter.TextFormatter;
 
 public abstract class Manuscript {
 
