@@ -1,15 +1,15 @@
 package main;
 
-import main.bridgepattern.draw.Circle;
-import main.bridgepattern.draw.DrawAPI;
-import main.bridgepattern.draw.RedCircle;
-import main.bridgepattern.draw.Shape;
-import main.bridgepattern.print.Book;
-import main.bridgepattern.print.Manuscript;
-import main.bridgepattern.print.TermPaper;
-import main.bridgepattern.print.formatter.FancyFormatter;
-import main.bridgepattern.print.formatter.ReverseTextFormatter;
-import main.bridgepattern.print.formatter.TextFormatter;
+import main.structural.bridge.draw.Circle;
+import main.structural.bridge.draw.DrawAPI;
+import main.structural.bridge.draw.RedCircle;
+import main.structural.bridge.draw.Shape;
+import main.structural.bridge.print.Book;
+import main.structural.bridge.print.Manuscript;
+import main.structural.bridge.print.TermPaper;
+import main.structural.bridge.print.formatter.FancyFormatter;
+import main.structural.bridge.print.formatter.ReverseTextFormatter;
+import main.structural.bridge.print.formatter.TextFormatter;
 
 public class PatternsMain {
 
