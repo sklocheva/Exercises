@@ -22,5 +22,6 @@ public class CollectionsMain
         	   deque.addLast(num);;
            }
        }
+       in.close();
     }
 }
