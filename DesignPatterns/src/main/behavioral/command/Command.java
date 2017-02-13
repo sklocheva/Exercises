@@ -3,5 +3,8 @@ package main.behavioral.command;
 public interface Command {
 
 	public String getName();
-	public String executeCommand(String arg);
+
+	public void setCommand(String text);
+
+	public String executeCommand();
 }

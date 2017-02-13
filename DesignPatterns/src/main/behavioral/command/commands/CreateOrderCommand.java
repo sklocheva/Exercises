@@ -6,6 +6,12 @@ import main.behavioral.command.Command;
 public class CreateOrderCommand implements Command {
 
 	private String name = "CreateOrder";
+	private String text;
+
+	@Override
+	public void setCommand(String text) {
+		this.text = text;
+	}
 
 	@Override
 	public String getName() {
@@ -13,8 +19,8 @@ public class CreateOrderCommand implements Command {
 	}
 
 	@Override
-	public String executeCommand(String arg) {
-		return String.format(AvailableCommands.response, this.name, arg);
+	public String executeCommand() {
+		return String.format(AvailableCommands.response, this.name, text);
 	}
 
 }
