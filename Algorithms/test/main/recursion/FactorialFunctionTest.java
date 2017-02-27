@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import main.other.recusrion.FactorialFunction;
+
 public class FactorialFunctionTest {
 
 	FactorialFunction factorial = new FactorialFunction();

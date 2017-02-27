@@ -1,7 +1,13 @@
-package main.recursion;
+package main.other.recusrion;
 
 import java.io.File;
 
+/**
+ * Counts the total number of directories in a given place.
+ * 
+ * @author Sophie
+ *
+ */
 public class DiskUsage {
 
 	public long diskUsage(File root) {

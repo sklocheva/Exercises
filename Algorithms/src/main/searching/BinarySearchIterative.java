@@ -1,16 +1,22 @@
 package main.searching;
 
-import java.util.List;
-
+/**
+ * Illustrates the iterative version of the binary search.
+ * 
+ * {@link} main.other.recursion.BinarySearchRecursive
+ * 
+ * @author Sophie
+ *
+ */
 public class BinarySearchIterative {
-	private List<Integer> list;
+	private int[] list;
 
-	public BinarySearchIterative(List<Integer> list) {
+	public BinarySearchIterative(int[] list) {
 		this.list = list;
 	}
 
 	public boolean binarySearch(int target) {
-		int high = list.size() - 1;
+		int high = list.length - 1;
 		int low = 0;
 		int mid;
 
@@ -21,9 +27,9 @@ public class BinarySearchIterative {
 			 * (high - low) /(list.get(high) - list.get(low)));
 			 */
 
-			if (list.get(mid) == target) {
+			if (list[mid] == target) {
 				return true;
-			} else if (list.get(mid) > target) {
+			} else if (list[mid] > target) {
 				high = mid - 1;
 			} else {
 				low = mid + 1;

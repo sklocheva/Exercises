@@ -1,6 +1,6 @@
 package main;
 
-import static main.ListFixture.orderedList;
+import static main.ListFixture.*;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -13,7 +13,7 @@ public class BinarySearchIterativeTest {
 
 	@Before
 	public void before() {
-		binarySearch = new BinarySearchIterative(orderedList);
+		binarySearch = new BinarySearchIterative(orderedArr);
 	}
 
 	@Test

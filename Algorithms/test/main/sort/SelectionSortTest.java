@@ -1,7 +1,9 @@
 package main.sort;
 
-import static org.junit.Assert.*;
-import static main.ListFixture.*;
+import static main.ListFixture.arr;
+import static main.ListFixture.orderedArr;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class SelectionSortTest {
@@ -9,13 +11,10 @@ public class SelectionSortTest {
 	
 	@Test
 	public void test() {
-		SelectionSort sort = new SelectionSort(list);
+		SelectionSort sort = new SelectionSort(arr);
 
-		System.out.println(list.toString());
 		sort.sort();
-		System.out.println(list.toString());
-
-		assertEquals(orderedList, list);
+		Assert.assertArrayEquals(orderedArr, arr);
 	}
 
 }

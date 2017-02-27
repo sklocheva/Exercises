@@ -12,7 +12,7 @@ public class ListFixture {
 	public static List<Integer> list = new ArrayList<Integer>();
 	public static List<Integer> orderedList;
 	public static int[] arr = new int[7];
-	public static int[] orderedArr = arr.clone();
+	public static int[] orderedArr;
 	
 	static{
 		list.add(5);
@@ -31,6 +31,8 @@ public class ListFixture {
 		arr[6] = 3;
 		orderedList = new ArrayList<Integer>(list);
 		Collections.sort(orderedList);
+		
+		orderedArr = arr.clone();
 		Arrays.sort(orderedArr);
 	}
 }

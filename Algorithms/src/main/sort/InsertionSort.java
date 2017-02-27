@@ -14,6 +14,9 @@ public class InsertionSort {
 		this.arr = arr;
 	}
 
+	/**
+	 * items are inserte in the left sorted part of the list.
+	 */
 	public void sort() {
 		// iterate over the list from the second el. till the end
 		for (int number = 1; number < arr.length; number++) {

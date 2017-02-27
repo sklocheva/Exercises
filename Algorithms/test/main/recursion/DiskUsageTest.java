@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.recursion.DiskUsage;
+import main.other.recusrion.DiskUsage;
 
 public class DiskUsageTest {
 

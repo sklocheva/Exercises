@@ -1,17 +1,21 @@
-package main.recursion;
+package main.other.recusrion;
 
-import java.util.List;
-
+/**
+ * Representation of binary search using recursion.
+ * 
+ * @author Sophie
+ *
+ */
 public class BinarySearchRecursive {
-	List<Integer> list;
+	int[] list;
 
-	public BinarySearchRecursive(List<Integer> list) {
+	public BinarySearchRecursive(int[] list) {
 		this.list = list;
 	}
 
 	public boolean binarySearch(int target) {
 
-		return search(target, 0, list.size() - 1);
+		return search(target, 0, list.length - 1);
 	}
 
 	private boolean search(int target, int low, int high) {
@@ -20,9 +24,9 @@ public class BinarySearchRecursive {
 		} else {
 
 			int mid = (low + high) / 2;
-			if (list.get(mid) == target) {
+			if (list[mid] == target) {
 				return true;
-			} else if (list.get(mid) > target) {
+			} else if (list[mid] > target) {
 				return search(target, low, mid - 1);
 			} else {
 				return search(target, mid + 1, high);
