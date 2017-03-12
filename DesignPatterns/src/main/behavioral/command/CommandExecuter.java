@@ -15,7 +15,7 @@ public class CommandExecuter {
 		storedCmd = new ArrayList<Command>();
 	}
 
-	// loop through all available commands to find it and them store in a list
+	// loop through all available commands to find it and then store in a list
 	// of commands
 	public void storeCommand(String command, String text) {
 		for (Command x : availableCmd) {
