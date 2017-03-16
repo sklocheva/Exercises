@@ -1,5 +1,12 @@
 package main.codewars;
 
+/**
+ * Finds a missing letter from a sequence. 
+ * Example: A, B, C, D, F
+ * 
+ * @author Sophie
+ *
+ */
 public class MissingLetter {
 
 	public static char findMissingLetter(char[] array) {
