@@ -1,5 +1,16 @@
 package main.hackerrank.tree;
-
+/**
+ * Preorder traversal of binary tree, also used in DFS.
+ * 
+ * 		4
+ * 	2		6
+ *1   3   5   7
+ *
+ *prints: 4213657
+ *
+ * @author Sophie
+ *
+ */
 public class PreOrderTraversal {
 
 	public void preOrder(Node root) {

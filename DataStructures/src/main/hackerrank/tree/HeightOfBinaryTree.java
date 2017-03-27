@@ -1,5 +1,11 @@
 package main.hackerrank.tree;
 
+/**
+ * Calculate the height of a binary tree and check which side is heavier.
+ * 
+ * @author Sophie
+ *
+ */
 public class HeightOfBinaryTree {
 
 	static int l;

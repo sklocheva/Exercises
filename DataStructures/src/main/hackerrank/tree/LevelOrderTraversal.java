@@ -3,6 +3,19 @@ package main.hackerrank.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 
+ * Level Order Traversal of binary tree, aka breadth first search.
+ * Prints out the nearest nodes first.
+ * 		4
+ * 	2		6
+ *1   3   5   7
+ *
+ *prints: 4261357
+ * 
+ * @author Sophie
+ *
+ */
 public class LevelOrderTraversal {
 
 	void LevelOrder(Node root) {
